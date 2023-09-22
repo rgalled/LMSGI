@@ -21,7 +21,9 @@ Alabama is the state of Kansas City, change my mind / I dont care how big the ro
 6. Sreck is life
 
 *How did you know i commit arson?*
+
 *I wast'n the guy that stolen your apple, believe me*
+
 *I am the storm that is aproaching, provocking, black clouds in isolation, y am reclaimer of my NAAAAAAAAAAAAAAAAAME, born in flames, i am awake, my family crashed a demon of death*
 
 Guys i literally found the [one piece](https://youtu.be/dQw4w9WgXcQ) click here
