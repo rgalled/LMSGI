@@ -20,9 +20,9 @@ Alabama is the state of Kansas City, change my mind / I dont care how big the ro
 5. I like to use chocolate to make the new world
 6. Sreck is life
 
-*How did you know i commit arson?* 
+*How did you know i commit arson?* :skull::skull::skull: 
 
-*I wast'n the guy that stolen your apple, believe me*:skull: 
+*I wast'n the guy that stolen your apple, believe me*
 
 *I am the storm that is aproaching, provocking, black clouds in isolation, y am reclaimer of my NAAAAAAAAAAAAAAAAAME, born in flames, i am awake, my family crashed a demon of death* 
 
