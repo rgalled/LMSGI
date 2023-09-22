@@ -26,7 +26,7 @@ Alabama is the state of Kansas City, change my mind / I dont care how big the ro
 
 *I am the storm that is aproaching, provocking, black clouds in isolation, y am reclaimer of my NAAAAAAAAAAAAAAAAAME, born in flames, i am awake, my family crashed a demon of death* 
 
-|-----||You see baki||You dont see it| 
-|props||you will be very glow up||you will not give all your time to eat biscuit whit oliva| 
-|const||You will start seeing a lot of gym men||you never gonna get muscles| 
+|-----|You see baki|You dont see it| 
+|props|you will be very glow up|you will not give all your time to eat biscuit whit oliva| 
+|const|You will start seeing a lot of gym men|you never gonna get muscles| 
 ## Guys I literally found the [one piece](https://youtu.be/dQw4w9WgXcQ) click here ##
