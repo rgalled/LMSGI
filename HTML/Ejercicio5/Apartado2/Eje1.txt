@@ -1,0 +1,21 @@
+package com.mycompany.Ejercicio1;
+
+public class Ejercicio1 {
+
+    public static void main(String[] args) {
+   
+//En este caso, este programa calculará una nota media entre un par dadas.
+        float notes1 = 8.3f;
+        float notes2 = 4.1f;
+        float notes3 = 5.1f;
+        float percentage1 = 0.2f;
+        float percentage2 = 0.6f;
+        float percentage3 = 0.2f;
+        float result;
+        
+        result = notes1*percentage1+notes2*percentage2+notes3*percentage3;
+        
+        System.out.print("la nota es " +result);
+
+    }
+}

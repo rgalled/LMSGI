@@ -1,0 +1,6 @@
+if(introducir condición){
+Realiza la acción si la condición se cumple
+}
+else{
+En caso de que la condición no se cumpla, se realizará esto, es opcional
+}

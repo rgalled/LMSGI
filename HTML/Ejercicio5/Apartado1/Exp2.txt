@@ -1,0 +1,11 @@
+For(crear variable; condición; incremento de variable){
+Se realiza la orden hasta que la condición sea falsa
+}
+
+while(Escribir la condición){
+Realiza la orden hasa que la condición sea falsa
+}
+
+do{
+Relaiza la orden minimo una vez, luego sigue la condición
+}while(Condición)

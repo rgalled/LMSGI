@@ -1,0 +1,12 @@
+Switch (Varibale que selecciona opción){
+
+case1: La orden a realizar
+  Breack; //Siempre se 
+case2: La orden a realizar
+  Breack; //Siempre se 
+case3: La orden a realizar
+  Breack; //Siempre se
+Default: Es secundario ponerlo, pero si da fallos es una buena idea
+  Breack; 
+
+}
