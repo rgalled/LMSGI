@@ -1,0 +1,7 @@
+em{color: red;}
+div em{
+    color: green;
+}
+div p em {
+    color: blue;
+}

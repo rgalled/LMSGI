@@ -1,0 +1,9 @@
+body{
+    text-align: center;
+}
+p{color: red;}
+#r{font-size: 7em; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; background-color: black; display: inline;}
+#r:hover{color: blue;}
+#s{font-size: 3em;}
+#t{font-size: 2em; text-align: left; background-color: grey;}
+#u{font-size: 4em; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; background-color: black; display: inline;}
