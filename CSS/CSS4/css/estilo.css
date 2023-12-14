@@ -1,0 +1,21 @@
+#p2,
+#p4,
+#p6 {
+    background-color: yellow;
+}
+
+#p6 {
+    font-size: 2em;
+}
+
+#p1,
+#p3,
+#p5,
+#p7 {
+    background-color: gray;
+}
+
+p {
+    border: solid 1px black;
+    padding: 5px;
+}

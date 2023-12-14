@@ -1,0 +1,25 @@
+.div1{
+    border: black solid 1px;
+    width: 50%;
+}
+
+.div1 p{
+    color: red;
+}
+
+.div3{
+    width: 33%;
+    border: red solid 1px;
+}
+.div3 p{
+    font-size: 120%;
+}
+
+.div2{
+    width: 25%;
+    border: blue solid 1px;
+}
+
+.div2 p{
+    font-size: 80%;
+}

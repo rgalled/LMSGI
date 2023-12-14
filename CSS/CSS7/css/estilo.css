@@ -1,0 +1,13 @@
+div{
+    padding: 1px;
+    height: 500px;
+    width: 100%;
+    border: black 1px solid;
+}
+
+.modif{
+    padding: 1px;
+    height: 50%;
+    width: 50%;
+    border: black solid 1px;
+}
