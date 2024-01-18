@@ -1,0 +1,20 @@
+#a {
+font-size: 3em;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+color: blue;
+text-align: left;
+}
+
+#b {
+    font-size: 15em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: red;
+    text-align: center;
+}
+
+#c {
+    font-size: 6em;
+    font-family: 'Times New Roman', Times, serif;
+    color: green;
+    text-align: right;
+}

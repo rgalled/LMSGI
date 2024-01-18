@@ -1,0 +1,52 @@
+.cuerpo{
+    display: flex;
+    overflow: auto;
+}
+
+#Eno{
+    float: right;
+    width: 50%;
+}
+#One{
+    float: left;
+    width: 50%;
+}
+
+body{
+    margin: auto;
+    width: 60%;
+    height: 50%;
+    background-color: bisque;
+}
+
+#titulo{
+    float: left;
+    color: red;
+}
+
+#datos{
+    margin-left: 220px;
+    margin-top: 40px;
+    float: right;
+}
+
+#parte{
+    margin: auto;
+}
+
+label{
+    display: inline-block;
+    width: 80px;
+}
+
+#fin{
+    margin-top: 60px;
+}
+
+textarea{
+    border-radius: 5%;
+}
+
+input[type="text"]{
+    padding: 5px;
+}

@@ -1,0 +1,44 @@
+header{
+    display: flex;
+    height: 90px;
+    background-color: rgb(145, 145, 255);
+}
+
+nav{
+    height: 40px;
+    background-color: rgb(50, 51, 102);
+}
+
+h1{
+    margin: 25px;
+
+}
+
+img{
+    width: 4%;
+    height: 80%;
+    margin-left: 1300px;
+    margin-top: 10px;
+}
+
+div{
+    width: 1000px;
+    display: flex;
+    margin: auto;
+}
+
+.en{
+    display: block;
+    padding: 20px;
+    background-color: rgb(122, 117, 148);
+    border: 1px black solid;
+}
+
+section{
+    width: 20%;
+    margin-right: 15px;
+}
+
+article{
+    width: 80%;
+}
