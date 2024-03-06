@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<peliculas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="info.xsd">
+    <peli>
+        <titulo>Esta</titulo>
+        <genero>Terror</genero>
+        <duracion>23</duracion>
+        <actores>
+            <actor>Si</actor>
+            <actor>MAYBE</actor>
+            <actor>MAYBE</actor>
+        </actores>
+        <fecha>1910</fecha>
+        <director>Francis</director>
+        <formato>DVD</formato>
+    </peli>
+</peliculas>

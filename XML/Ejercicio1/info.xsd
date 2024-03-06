@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="peliculas">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="peli">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="titulo" type="xs:string"></xs:element>
+                        <xs:element name="genero" type="T-genero"></xs:element>
+                        <xs:element name="duracion" type="xs:positiveInteger"></xs:element>
+                        <xs:element name="actores" >
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="actor" type="xs:string" maxOccurs="3"></xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="fecha" type="T-fecha"></xs:element>
+                        <xs:element name="director" type="xs:string"></xs:element>
+                        <xs:element name="formato" type="T-dvd"></xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="T-genero">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="Drama|Comedia|Terror|Thriller|Fantasy"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="T-fecha">
+    <xs:restriction base="xs:decimal">
+        <xs:minExclusive value="1900"></xs:minExclusive>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="T-dvd">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="DVD|VHS"/>
+    </xs:restriction>
+</xs:simpleType>
+</xs:schema>
