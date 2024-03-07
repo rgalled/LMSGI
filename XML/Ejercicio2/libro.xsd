@@ -7,11 +7,30 @@
             <xs:element name="contenido">
                 <xs:complexType>
                     <xs:sequence>
-                        
+                        <xs:element name="capitulo" maxOccurs="unbounded">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="tema"/>                          
+                                    <xs:element name="seccion" maxOccurs="unbounded"></xs:element>
+                                </xs:sequence>
+                                <xs:attribute name="materia" type="xs:string"></xs:attribute>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="separacion" maxOccurs="unbounded" minOccurs="0"></xs:element>
                     </xs:sequence>
                 </xs:complexType>
             </xs:element>
+            <xs:element name="copyright"></xs:element>
         </xs:sequence>
     </xs:complexType>
 </xs:element>
+
+<xs:complexType name="T-seccion">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="apartados" type="xs:decimal"></xs:attribute>
+                <xs:attribute name="dificil" type="xs:string"></xs:attribute>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
 </xs:schema>

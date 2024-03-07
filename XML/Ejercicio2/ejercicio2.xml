@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<libro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="libro.xsd">
- <titulo>Java y XML</titulo>
- <contenido>
- <capitulo materia="XML">
- <tema>Introduccion</tema>
- <seccion apartados="7">Qué es</seccion>
- <seccion apartados="3">Cómo se usa</seccion>
- </capitulo>
- <capitulo materia="XML">
-    
- <tema>Creando XML</tema>
- <seccion apartados="0">Un documento XML</seccion>
- <seccion apartados="2">La cabecera</seccion>
- <seccion apartados="6">El contenido</seccion>
- </capitulo>
- <capitulo>
- <tema>Analizando XML</tema>
- <seccion apartados="3">Preparación</seccion>
- <seccion apartados="3" dificil="si">SAX</seccion>
- <seccion apartados="9" dificil="si">Manejadores</seccion>
- <seccion apartados="0">Una forma mejor de cargar el analizador</seccion>
- </capitulo>
- <separacion/>
- <capitulo materia="Java">
- <tema>JDOM</tema>
- <seccion apartados="2">Introducción</seccion>
- <seccion apartados="4" dificil="si">DOM&amp;JDOM</seccion>
- </capitulo>
- </contenido>
- <copyright>2000</copyright>
+<libro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="libro.xsd">
+    <titulo>Java y XML</titulo>
+    <contenido>
+        <capitulo materia="XML">
+            <tema>Introduccion</tema>
+            <seccion apartados="7">Qué es</seccion>
+            <seccion apartados="3">Cómo se usa</seccion>
+        </capitulo>
+        <capitulo materia="XML">
+            <tema>Creando XML</tema>
+            <seccion apartados="0">Un documento XML</seccion>
+            <seccion apartados="2">La cabecera</seccion>
+            <seccion apartados="6">El contenido</seccion>
+        </capitulo>
+        <capitulo>
+            <tema>Analizando XML</tema>
+            <seccion apartados="3">Preparación</seccion>
+            <seccion apartados="3" dificil="si">SAX</seccion>
+            <seccion apartados="9" dificil="si">Manejadores</seccion>
+            <seccion apartados="0">Una forma mejor de cargar el analizador</seccion>
+        </capitulo>
+        <separacion></separacion>
+        <capitulo materia="Java">
+            <tema>JDOM</tema>
+            <seccion apartados="2">Introducción</seccion>
+            <seccion apartados="4" dificil="si">DOM&amp;JDOM</seccion>
+        </capitulo>
+    </contenido>
+    <copyright>2000</copyright>
 </libro>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="factura" type="facturaT"></xs:element>
+
+<xs:complexType name="facturaT">
+    <xs:sequence>
+        <xs:element name="emision" type="xs:string"></xs:element>
+        <xs:element name="vendedor" type="T-ven"></xs:element>
+        <xs:element name="cliente" type="T-com"></xs:element>
+        <xs:element name="articulo" type="T-art" maxOccurs="unbounded"></xs:element>
+        <xs:element name="descuento" type="xs:decimal"></xs:element>
+    </xs:sequence>
+    <xs:attribute name="id"></xs:attribute>
+</xs:complexType>
+
+<xs:complexType name="T-ven">
+    <xs:sequence>
+        <xs:element name="nombre" type="xs:string"></xs:element>
+    </xs:sequence>
+    <xs:attribute name="id"></xs:attribute>
+</xs:complexType>
+
+<xs:complexType name="T-com">
+    <xs:sequence>
+        <xs:element name="nombre" type="xs:string"></xs:element>
+        <xs:element name="direccion" type="T-dir"></xs:element>
+        <xs:element name="telefono" type="tlf" maxOccurs="unbounded"></xs:element>
+    </xs:sequence>
+    <xs:attribute name="id"></xs:attribute>
+</xs:complexType>
+
+<xs:complexType name="tlf" >
+        <xs:attribute name="num" type="xs:decimal"></xs:attribute>
+</xs:complexType>
+
+<xs:complexType name="T-dir">
+    <xs:sequence>
+        <xs:element name="via" type="xs:string"></xs:element>
+        <xs:element name="cp" type="xs:string"></xs:element>
+        <xs:element name="localidad" type="xs:string"></xs:element>
+        <xs:element name="provincia" type="xs:string"></xs:element>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="T-art">
+    <xs:sequence>
+        <xs:element name="denominacion" type="xs:string"></xs:element>
+        <xs:element name="precio" type="xs:string"></xs:element>
+        <xs:element name="cantidad" type="xs:string"></xs:element>
+    </xs:sequence>
+    <xs:attribute name="id"></xs:attribute>
+    <xs:attribute name="iva"></xs:attribute>
+</xs:complexType>
+
+</xs:schema>
