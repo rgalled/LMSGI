@@ -4,7 +4,7 @@
     <datosPersonales>
         <nombre>Rafa</nombre>
         <apellido>Gallardo Ledesma</apellido>
-        <fechaNacimiento>26/05/2004</fechaNacimiento>
+        <fechaNacimiento>2004-05-26</fechaNacimiento>
         <lugarNacimiento>Granada</lugarNacimiento>
         <nacionalidad>España</nacionalidad>
         <nif>12345678A</nif>

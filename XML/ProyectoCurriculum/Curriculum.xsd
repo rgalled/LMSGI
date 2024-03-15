@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="Curriculum" type="T-Curriculum"></xs:element>
+
+<xs:complexType name="T-Curriculum">
+    <xs:sequence>
+        <xs:element name="datosPersonales" type="Tdatos"></xs:element>
+        <xs:element name="contactos" type="Tcontactos"></xs:element>
+        <xs:element name="contactoAdicional" type="TcontactoAdicional"></xs:element>
+        <xs:element name="fomracion" type="Tfomracion" maxOccurs="unbounded"></xs:element>
+        <xs:element name="idiomas" type="Tidiomas"></xs:element>
+        <xs:element name="experiencia" type="Texperiencia"></xs:element>
+        <xs:element name="Competencia" type="TCompetencia"></xs:element>
+        <xs:element name="DatosAdicionales" type="TDatosAdicionales"></xs:element>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Tdatos">
+    <xs:sequence>
+        <xs:element name="nombre" type="xs:string"></xs:element>
+        <xs:element name="apellido" type="xs:string"></xs:element>
+        <xs:element name="fechaNacimiento" type="xs:date"></xs:element>
+        <xs:element name="lugarNacimiento" type="xs:string"></xs:element>
+        <xs:element name="nacionalidad" type="xs:string"></xs:element>
+        <xs:element name="nif" type="Tnif"></xs:element>
+        <xs:element name="foto" type="xs:string"></xs:element>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="Tnif">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="[0-9]{8}[A-Z]"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="Tcontactos">
+    <xs:sequence>
+        <xs:element name="tipo" type="xs:string"></xs:element>
+        <xs:element name="nombre" type="xs:string"></xs:element>
+        <xs:element name="numero" type="xs:string"></xs:element>
+        <xs:element name="portal" type="xs:string"></xs:element>
+        <xs:element name="escalera" type="xs:string"></xs:element>
+        <xs:element name="piso" type="xs:string"></xs:element>
+        <xs:element name="puerta" type="xs:string"></xs:element>
+        <xs:element name="CP" type="TCP"></xs:element>
+        <xs:element name="pais" type="xs:string"></xs:element>
+        <xs:element name="email" type="Temail"></xs:element>
+        <xs:element name="lfn" type="Tlfn"></xs:element>
+        <xs:element name="tlfFijo" type="Tlfn"></xs:element>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="Tlfn">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="[0-9]{9}"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="Temail">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="@gmail.com"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="TCP">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="[0-9]{5}"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="TcontactoAdicional">
+    <xs:sequence>
+        <xs:element name="web" type="xs:string"></xs:element>
+        <xs:element name="redes" type="xs:string"></xs:element>
+    </xs:sequence>
+</xs:complexType>
+
+</xs:schema>
