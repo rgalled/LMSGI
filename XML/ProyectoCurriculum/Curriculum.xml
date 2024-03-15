@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Curriculum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="Curriculum.xsd">
+    <datosPersonales>
+        <nombre></nombre>
+        <apellido></apellido>
+        <fecha></fecha>
+        <nacimiento></nacimiento>
+        <nacionalidad></nacionalidad>
+        <nif></nif>
+        <foto></foto>
+    </datosPersonales>
+
+    <contactos>
+        <tipo></tipo>
+        <nombre></nombre>
+        <numero></numero>
+        <portal></portal>
+        <escalera></escalera>
+        <piso></piso>
+        <puerta></puerta>
+        <CP></CP>
+        <pais></pais>
+        <email></email>
+        <lfn></lfn>
+        <tlfFijo></tlfFijo>
+    </contactos>
+
+    <contactoAdicional>
+        <web></web>
+        <redes></redes>
+    </contactoAdicional>
+
+    <fomracion>
+        <nombre></nombre>
+        <lugar></lugar>
+        <Finicio></Finicio>
+        <FFin></FFin>
+    </fomracion>
+
+    <idiomas>
+        <nombre></nombre>
+        <nivelOral></nivelOral>
+        <comprensiónOral></comprensiónOral>
+        <expresionEscrita></expresionEscrita>
+        <nivelEscrito></nivelEscrito>
+        <tituloAcademico></tituloAcademico>
+        <nivelTitulo></nivelTitulo>
+    </idiomas>
+
+    <experiencia>
+        <lugar></lugar>
+        <puesto></puesto>
+        <FInicio></FInicio>
+        <FFin></FFin>
+    </experiencia>
+
+    <Competencia>
+        <nombre></nombre>
+        <nivel></nivel>
+    </Competencia>
+
+    <DatosAdicionales>
+        <aficiones></aficiones>
+        <disponibilidadViajar></disponibilidadViajar>
+        <vehiculoPropio></vehiculoPropio>
+        <licencia></licencia>
+        <permisos></permisos>
+    </DatosAdicionales>
+</Curriculum>

@@ -14,7 +14,7 @@
       <provincia>Sevilla</provincia>
     </direccion>
     <telefono num="666111666" />
-    <telefono num="954666111" />
+    <telefono num="954666111"/>
   </cliente>
   <articulo id="121" iva="18">
     <denominacion>Silla giratoria modelo C-121</denominacion>
