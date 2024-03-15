@@ -33,22 +33,22 @@
     <fomracion>
         <nombre>Zaidin Vergeles</nombre>
         <lugar>Granada</lugar>
-        <Finicio>21/8/2023</Finicio>
-        <FFin>24/05/2025</FFin>
+        <Finicio>2004-05-26</Finicio>
+        <FFin>2004-05-26</FFin>
     </fomracion>
 
     <fomracion>
         <nombre>Ramon y Cajal</nombre>
         <lugar>Granada</lugar>
-        <Finicio>21/8/2025</Finicio>
-        <FFin>24/05/2027</FFin>
+        <Finicio>2004-05-26</Finicio>
+        <FFin>2004-05-26</FFin>
     </fomracion>
 
     <fomracion>
         <nombre>Universidad de Bellas artes</nombre>
         <lugar>Granada</lugar>
-        <Finicio>21/8/2027</Finicio>
-        <FFin>24/06/2031</FFin>
+        <Finicio>2004-05-26</Finicio>
+        <FFin>2004-05-26</FFin>
     </fomracion>
 
     <idiomas>
@@ -64,13 +64,13 @@
     <experiencia>
         <lugar>Mediamark</lugar>
         <puesto>Cajero</puesto>
-        <FInicio>20/01/2032</FInicio>
-        <FFin>20/01/2033</FFin>
+        <FInicio>2004-05-26</FInicio>
+        <FFin>2004-05-26</FFin>
     </experiencia>
 
     <Competencia>
         <nombre>Habilidad social</nombre>
-        <nivel>4</nivel>
+        <nivel>3</nivel>
     </Competencia>
 
     <Competencia>
@@ -92,6 +92,6 @@
         <aficiones>Escribir</aficiones>
         <disponibilidadViajar>si</disponibilidadViajar>
         <vehiculoPropio>Moto</vehiculoPropio>
-        <licencia>C1</licencia>
+        <licencia>B</licencia>
     </DatosAdicionales>
 </Curriculum>

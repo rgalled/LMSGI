@@ -43,7 +43,7 @@
         <xs:element name="piso" type="xs:string"></xs:element>
         <xs:element name="puerta" type="xs:string"></xs:element>
         <xs:element name="CP" type="TCP"></xs:element>
-        <xs:element name="pais" type="xs:string"></xs:element>
+        <xs:element name="pais" default="España" type="xs:string"></xs:element>
         <xs:element name="email" type="Temail"></xs:element>
         <xs:element name="lfn" type="Tlfn"></xs:element>
         <xs:element name="tlfFijo" type="Tlfn" minOccurs="0"></xs:element>
@@ -93,12 +93,12 @@
 <xs:complexType name="Tidiomas">
     <xs:sequence>
         <xs:element name="nombre" type="xs:string"></xs:element>
-        <xs:element name="nivelOral" type="TNivel"></xs:element>
-        <xs:element name="comprensiónOral" type="TNivel"></xs:element>
-        <xs:element name="expresionEscrita" type="TNivel"></xs:element>
-        <xs:element name="nivelEscrito" type="TNivel"></xs:element>
+        <xs:element name="nivelOral" default="medio" type="TNivel"></xs:element>
+        <xs:element name="comprensiónOral" default="medio" type="TNivel"></xs:element>
+        <xs:element name="expresionEscrita" default="medio" type="TNivel"></xs:element>
+        <xs:element name="nivelEscrito" default="medio" type="TNivel"></xs:element>
         <xs:element name="tituloAcademico" type="xs:string"></xs:element>
-        <xs:element name="nivelTitulo" type="Ttitulo"></xs:element>
+        <xs:element name="nivelTitulo" default="B2" type="Ttitulo"></xs:element>
     </xs:sequence>
 </xs:complexType>
 
@@ -126,7 +126,7 @@
 <xs:complexType name="TCompetencia">
     <xs:sequence>
         <xs:element name="nombre" type="xs:string"></xs:element>
-        <xs:element name="nivel" type="TValor"></xs:element>
+        <xs:element name="nivel" default="1" type="TValor"></xs:element>
     </xs:sequence>
 </xs:complexType>
 
@@ -140,7 +140,7 @@
 <xs:complexType name="TDatosAdicionales">
     <xs:sequence>
         <xs:element name="aficiones" type="xs:string"></xs:element>
-        <xs:element name="disponibilidadViajar" type="Tviaje"></xs:element>
+        <xs:element name="disponibilidadViajar" default="no" type="Tviaje"></xs:element>
         <xs:element name="vehiculoPropio" type="xs:string"></xs:element>
         <xs:element name="licencia" type="TLicencia"></xs:element>
     </xs:sequence>
@@ -154,7 +154,7 @@
 
 <xs:simpleType name="TLicencia">
     <xs:restriction base="xs:string">
-        <xs:pattern value="AM|A1|A2|A|B|BE|C1|C|D1|D1E|D|BTP"/>
+        <xs:pattern value="AM|A1|A2|A|B|B+E|C1|C|D1|D1+E|D|BTP"/>
     </xs:restriction>
 </xs:simpleType>
 </xs:schema>
