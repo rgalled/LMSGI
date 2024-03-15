@@ -2,69 +2,97 @@
 <Curriculum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="Curriculum.xsd">
     <datosPersonales>
-        <nombre></nombre>
-        <apellido></apellido>
-        <fecha></fecha>
-        <nacimiento></nacimiento>
-        <nacionalidad></nacionalidad>
-        <nif></nif>
-        <foto></foto>
+        <nombre>Rafa</nombre>
+        <apellido>Gallardo Ledesma</apellido>
+        <fechaNacimiento>26/05/2004</fechaNacimiento>
+        <lugarNacimiento>Granada</lugarNacimiento>
+        <nacionalidad>España</nacionalidad>
+        <nif>12345678A</nif>
+        <foto>imagen.png</foto>
     </datosPersonales>
 
     <contactos>
-        <tipo></tipo>
-        <nombre></nombre>
-        <numero></numero>
-        <portal></portal>
+        <tipo>Calle</tipo>
+        <nombre>nombreCalle</nombre>
+        <numero>22</numero>
+        <portal>4B</portal>
         <escalera></escalera>
         <piso></piso>
-        <puerta></puerta>
-        <CP></CP>
-        <pais></pais>
-        <email></email>
-        <lfn></lfn>
+        <puerta>3F</puerta>
+        <CP>18140</CP>
+        <pais>España</pais>
+        <email>uncorreo@gmail.com</email>
+        <lfn>123456789</lfn>
         <tlfFijo></tlfFijo>
     </contactos>
 
     <contactoAdicional>
-        <web></web>
-        <redes></redes>
+        <web>www.unaWeb.com</web>
+        <redes>@_cuentaInstagram</redes>
     </contactoAdicional>
 
     <fomracion>
-        <nombre></nombre>
-        <lugar></lugar>
-        <Finicio></Finicio>
-        <FFin></FFin>
+        <nombre>Zaidin Vergeles</nombre>
+        <lugar>Granada</lugar>
+        <Finicio>21/8/2023</Finicio>
+        <FFin>24/05/2025</FFin>
+    </fomracion>
+
+    <fomracion>
+        <nombre>Ramon y Cajal</nombre>
+        <lugar>Granada</lugar>
+        <Finicio>21/8/2025</Finicio>
+        <FFin>24/05/2027</FFin>
+    </fomracion>
+
+    <fomracion>
+        <nombre>Universidad de Bellas artes</nombre>
+        <lugar>Granada</lugar>
+        <Finicio>21/8/2027</Finicio>
+        <FFin>24/06/2031</FFin>
     </fomracion>
 
     <idiomas>
-        <nombre></nombre>
-        <nivelOral></nivelOral>
-        <comprensiónOral></comprensiónOral>
-        <expresionEscrita></expresionEscrita>
-        <nivelEscrito></nivelEscrito>
+        <nombre>Ingles</nombre>
+        <nivelOral>medio</nivelOral>
+        <comprensiónOral>medio</comprensiónOral>
+        <expresionEscrita>medio</expresionEscrita>
+        <nivelEscrito>medio</nivelEscrito>
         <tituloAcademico></tituloAcademico>
-        <nivelTitulo></nivelTitulo>
+        <nivelTitulo>B2</nivelTitulo>
     </idiomas>
 
     <experiencia>
-        <lugar></lugar>
-        <puesto></puesto>
-        <FInicio></FInicio>
-        <FFin></FFin>
+        <lugar>Mediamark</lugar>
+        <puesto>Cajero</puesto>
+        <FInicio>20/01/2032</FInicio>
+        <FFin>20/01/2033</FFin>
     </experiencia>
 
     <Competencia>
-        <nombre></nombre>
-        <nivel></nivel>
+        <nombre>Habilidad social</nombre>
+        <nivel>4</nivel>
+    </Competencia>
+
+    <Competencia>
+        <nombre>Trabajo en equipo</nombre>
+        <nivel>5</nivel>
+    </Competencia>
+
+    <Competencia>
+        <nombre>Aprendizaje rápido</nombre>
+        <nivel>4</nivel>
+    </Competencia>
+
+    <Competencia>
+        <nombre>Adaptación a nuevos entornos</nombre>
+        <nivel>3</nivel>
     </Competencia>
 
     <DatosAdicionales>
-        <aficiones></aficiones>
-        <disponibilidadViajar></disponibilidadViajar>
-        <vehiculoPropio></vehiculoPropio>
-        <licencia></licencia>
-        <permisos></permisos>
+        <aficiones>Escribir</aficiones>
+        <disponibilidadViajar>Si</disponibilidadViajar>
+        <vehiculoPropio>Moto</vehiculoPropio>
+        <licencia>AM</licencia>
     </DatosAdicionales>
 </Curriculum>
