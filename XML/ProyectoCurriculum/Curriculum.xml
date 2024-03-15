@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Curriculum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="Curriculum.xsd">
+    	<!-- Los datos personales -->
     <datosPersonales>
         <nombre>Rafa</nombre>
         <apellido>Gallardo Ledesma</apellido>
@@ -10,7 +11,7 @@
         <nif>12345678A</nif>
         <foto>imagen.png</foto>
     </datosPersonales>
-
+	<!-- Los contactos de la persona-->
     <contactos>
         <tipo>Calle</tipo>
         <nombre>nombreCalle</nombre>
@@ -24,12 +25,12 @@
         <email>uncorreo@gmail.com</email>
         <lfn>123456789</lfn>
     </contactos>
-
+	<!-- Los contactos adicionales de la persona-->
     <contactoAdicional>
         <web>www.unaWeb.com</web>
         <redes>@_cuentaInstagram</redes>
     </contactoAdicional>
-
+	<!-- el tipo de formación de la persona-->
     <fomracion>
         <nombre>Zaidin Vergeles</nombre>
         <lugar>Granada</lugar>
@@ -50,7 +51,7 @@
         <Finicio>2004-05-26</Finicio>
         <FFin>2004-05-26</FFin>
     </fomracion>
-
+	<!-- Los idiomas de la persona-->
     <idiomas>
         <nombre>Ingles</nombre>
         <nivelOral>medio</nivelOral>
@@ -60,14 +61,14 @@
         <tituloAcademico></tituloAcademico>
         <nivelTitulo>B2</nivelTitulo>
     </idiomas>
-
+	<!-- La experiecia profesional de la persona-->
     <experiencia>
         <lugar>Mediamark</lugar>
         <puesto>Cajero</puesto>
         <FInicio>2004-05-26</FInicio>
         <FFin>2004-05-26</FFin>
     </experiencia>
-
+	<!-- Las competencias de trabajo de la persona-->
     <Competencia>
         <nombre>Habilidad social</nombre>
         <nivel>3</nivel>
@@ -87,7 +88,7 @@
         <nombre>Adaptación a nuevos entornos</nombre>
         <nivel>3</nivel>
     </Competencia>
-
+	<!-- Datos adicionales de la persona-->
     <DatosAdicionales>
         <aficiones>Escribir</aficiones>
         <disponibilidadViajar>si</disponibilidadViajar>

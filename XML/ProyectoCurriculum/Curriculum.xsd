@@ -2,6 +2,7 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 <xs:element name="Curriculum" type="T-Curriculum"></xs:element>
 
+<!-- Este es el esquema general del currículum-->
 <xs:complexType name="T-Curriculum">
     <xs:sequence>
         <xs:element name="datosPersonales" type="Tdatos"></xs:element>
@@ -14,7 +15,7 @@
         <xs:element name="DatosAdicionales" type="TDatosAdicionales"></xs:element>
     </xs:sequence>
 </xs:complexType>
-
+<!-- Aquí están los datos de la persona-->
 <xs:complexType name="Tdatos">
     <xs:sequence>
         <xs:element name="nombre" type="xs:string"></xs:element>
@@ -26,22 +27,22 @@
         <xs:element name="foto" type="xs:string"></xs:element>
     </xs:sequence>
 </xs:complexType>
-
+<!-- Definición del tipo de dato para el dni o nif-->
 <xs:simpleType name="Tnif">
     <xs:restriction base="xs:string">
         <xs:pattern value="[0-9]{8}[A-Z]"/>
     </xs:restriction>
 </xs:simpleType>
-
+<!-- Los datos de los contactos de la persona-->
 <xs:complexType name="Tcontactos">
     <xs:sequence>
         <xs:element name="tipo" type="xs:string"></xs:element>
         <xs:element name="nombre" type="xs:string"></xs:element>
-        <xs:element name="numero" type="xs:string"></xs:element>
-        <xs:element name="portal" type="xs:string"></xs:element>
-        <xs:element name="escalera" type="xs:string"></xs:element>
-        <xs:element name="piso" type="xs:string"></xs:element>
-        <xs:element name="puerta" type="xs:string"></xs:element>
+        <xs:element name="numero" type="xs:string" minOccurs="0"></xs:element>
+        <xs:element name="portal" type="xs:string" minOccurs="0"></xs:element>
+        <xs:element name="escalera" type="xs:string" minOccurs="0"></xs:element>
+        <xs:element name="piso" type="xs:string" minOccurs="0"></xs:element>
+        <xs:element name="puerta" type="xs:string" minOccurs="0"></xs:element>
         <xs:element name="CP" type="TCP"></xs:element>
         <xs:element name="pais" default="España" type="xs:string"></xs:element>
         <xs:element name="email" type="Temail"></xs:element>
@@ -49,38 +50,38 @@
         <xs:element name="tlfFijo" type="Tlfn" minOccurs="0"></xs:element>
     </xs:sequence>
 </xs:complexType>
-
+<!-- Tipo de dato para el telefono, tanto normal como fijo-->
 <xs:simpleType name="Tlfn">
     <xs:restriction base="xs:string">
         <xs:pattern value="[0-9]{9}"/>
     </xs:restriction>
 </xs:simpleType>
-
+<!-- Definición del tipo de dato para el correo-->
 <xs:simpleType name="Temail">
     <xs:restriction base="xs:string">
         <xs:pattern value="\w+@gmail.com"/>
     </xs:restriction>
 </xs:simpleType>
-
+<!-- Definición del tipo de dato para el codigo postal-->
 <xs:simpleType name="TCP">
     <xs:restriction base="xs:string">
         <xs:pattern value="[0-9]{5}"/>
     </xs:restriction>
 </xs:simpleType>
-
+<!-- Los datos de los contactos adicionales de la persona-->
 <xs:complexType name="TcontactoAdicional">
     <xs:sequence>
         <xs:element name="web" type="Tweb" minOccurs="0" maxOccurs="unbounded"></xs:element>
         <xs:element name="redes" type="xs:string" minOccurs="0" maxOccurs="unbounded"></xs:element>
     </xs:sequence>
 </xs:complexType>
-
+<!-- Definición del tipo de dato para la web-->
 <xs:simpleType name="Tweb">
     <xs:restriction base="xs:string">
         <xs:pattern value="www.+\w+.(com|es|org)"/>
     </xs:restriction>
 </xs:simpleType>
-
+<!-- Los datos de los tipos de formacion de la persona-->
 <xs:complexType name="Tfomracion">
     <xs:sequence>
         <xs:element name="nombre" type="xs:string"></xs:element>
@@ -89,7 +90,7 @@
         <xs:element name="FFin" type="xs:date"></xs:element>
     </xs:sequence>
 </xs:complexType>
-
+<!-- Los datos de los idiomas de la persona-->
 <xs:complexType name="Tidiomas">
     <xs:sequence>
         <xs:element name="nombre" type="xs:string"></xs:element>
@@ -101,19 +102,19 @@
         <xs:element name="nivelTitulo" default="B2" type="Ttitulo"></xs:element>
     </xs:sequence>
 </xs:complexType>
-
+<!-- Definición del tipo de dato para el nivel del idioma-->
 <xs:simpleType name="TNivel">
     <xs:restriction base="xs:string">
         <xs:pattern value="bajo|medio|alto"/>
     </xs:restriction>
 </xs:simpleType>
-
+<!-- Definición del tipo de dato para el titulo del idioma-->
 <xs:simpleType name="Ttitulo">
     <xs:restriction base="xs:string">
         <xs:pattern value="A1|A2|B1|B2|C1|C2"/>
     </xs:restriction>
 </xs:simpleType>
-
+<!-- Los datos de la experiencia de la persona-->
 <xs:complexType name="Texperiencia">
     <xs:sequence>
         <xs:element name="lugar" type="xs:string"></xs:element>
@@ -122,21 +123,21 @@
         <xs:element name="FFin" type="xs:date"></xs:element>
     </xs:sequence>
 </xs:complexType>
-
+<!-- Los datos de los tipos de competencias de la persona-->
 <xs:complexType name="TCompetencia">
     <xs:sequence>
         <xs:element name="nombre" type="xs:string"></xs:element>
         <xs:element name="nivel" default="1" type="TValor"></xs:element>
     </xs:sequence>
 </xs:complexType>
-
+<!-- Definición del tipo de dato para el nivel de competencia-->
 <xs:simpleType name="TValor">
     <xs:restriction base="xs:decimal">
         <xs:minInclusive value="1"/>
         <xs:maxInclusive value="5"/>
     </xs:restriction>
 </xs:simpleType>
-
+<!-- Los datos de los datos adicionales de la persona-->
 <xs:complexType name="TDatosAdicionales">
     <xs:sequence>
         <xs:element name="aficiones" type="xs:string"></xs:element>
@@ -145,13 +146,13 @@
         <xs:element name="licencia" type="TLicencia"></xs:element>
     </xs:sequence>
 </xs:complexType>
-
+<!-- Definición del tipo de dato para la aprobación o negación de la disponibilidad de viaje-->
 <xs:simpleType name="Tviaje">
     <xs:restriction base="xs:string">
         <xs:pattern value="si|no"/>
     </xs:restriction>
 </xs:simpleType>
-
+<!-- Definición del tipo de dato para el tipo de licencia-->
 <xs:simpleType name="TLicencia">
     <xs:restriction base="xs:string">
         <xs:pattern value="AM|A1|A2|A|B|B+E|C1|C|D1|D1+E|D|BTP"/>
