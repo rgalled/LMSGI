@@ -8,9 +8,9 @@
         <xs:element name="contactos" type="Tcontactos"></xs:element>
         <xs:element name="contactoAdicional" type="TcontactoAdicional"></xs:element>
         <xs:element name="fomracion" type="Tfomracion" maxOccurs="unbounded"></xs:element>
-        <xs:element name="idiomas" type="Tidiomas"></xs:element>
-        <xs:element name="experiencia" type="Texperiencia"></xs:element>
-        <xs:element name="Competencia" type="TCompetencia"></xs:element>
+        <xs:element name="idiomas" type="Tidiomas" maxOccurs="unbounded"></xs:element>
+        <xs:element name="experiencia" type="Texperiencia" maxOccurs="unbounded"></xs:element>
+        <xs:element name="Competencia" type="TCompetencia" maxOccurs="unbounded"></xs:element>
         <xs:element name="DatosAdicionales" type="TDatosAdicionales"></xs:element>
     </xs:sequence>
 </xs:complexType>
@@ -46,7 +46,7 @@
         <xs:element name="pais" type="xs:string"></xs:element>
         <xs:element name="email" type="Temail"></xs:element>
         <xs:element name="lfn" type="Tlfn"></xs:element>
-        <xs:element name="tlfFijo" type="Tlfn"></xs:element>
+        <xs:element name="tlfFijo" type="Tlfn" minOccurs="0"></xs:element>
     </xs:sequence>
 </xs:complexType>
 
@@ -58,7 +58,7 @@
 
 <xs:simpleType name="Temail">
     <xs:restriction base="xs:string">
-        <xs:pattern value="@gmail.com"/>
+        <xs:pattern value="\w+@gmail.com"/>
     </xs:restriction>
 </xs:simpleType>
 
@@ -70,9 +70,91 @@
 
 <xs:complexType name="TcontactoAdicional">
     <xs:sequence>
-        <xs:element name="web" type="xs:string"></xs:element>
-        <xs:element name="redes" type="xs:string"></xs:element>
+        <xs:element name="web" type="Tweb" minOccurs="0" maxOccurs="unbounded"></xs:element>
+        <xs:element name="redes" type="xs:string" minOccurs="0" maxOccurs="unbounded"></xs:element>
     </xs:sequence>
 </xs:complexType>
 
+<xs:simpleType name="Tweb">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="www.+\w+.(com|es|org)"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="Tfomracion">
+    <xs:sequence>
+        <xs:element name="nombre" type="xs:string"></xs:element>
+        <xs:element name="lugar" type="xs:string"></xs:element>
+        <xs:element name="Finicio" type="xs:date"></xs:element>
+        <xs:element name="FFin" type="xs:date"></xs:element>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Tidiomas">
+    <xs:sequence>
+        <xs:element name="nombre" type="xs:string"></xs:element>
+        <xs:element name="nivelOral" type="TNivel"></xs:element>
+        <xs:element name="comprensiónOral" type="TNivel"></xs:element>
+        <xs:element name="expresionEscrita" type="TNivel"></xs:element>
+        <xs:element name="nivelEscrito" type="TNivel"></xs:element>
+        <xs:element name="tituloAcademico" type="xs:string"></xs:element>
+        <xs:element name="nivelTitulo" type="Ttitulo"></xs:element>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="TNivel">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="bajo|medio|alto"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="Ttitulo">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="A1|A2|B1|B2|C1|C2"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="Texperiencia">
+    <xs:sequence>
+        <xs:element name="lugar" type="xs:string"></xs:element>
+        <xs:element name="puesto" type="xs:string"></xs:element>
+        <xs:element name="FInicio" type="xs:date"></xs:element>
+        <xs:element name="FFin" type="xs:date"></xs:element>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TCompetencia">
+    <xs:sequence>
+        <xs:element name="nombre" type="xs:string"></xs:element>
+        <xs:element name="nivel" type="TValor"></xs:element>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="TValor">
+    <xs:restriction base="xs:decimal">
+        <xs:minInclusive value="1"/>
+        <xs:maxInclusive value="5"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="TDatosAdicionales">
+    <xs:sequence>
+        <xs:element name="aficiones" type="xs:string"></xs:element>
+        <xs:element name="disponibilidadViajar" type="Tviaje"></xs:element>
+        <xs:element name="vehiculoPropio" type="xs:string"></xs:element>
+        <xs:element name="licencia" type="TLicencia"></xs:element>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="Tviaje">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="si|no"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="TLicencia">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="AM|A1|A2|A|B|BE|C1|C|D1|D1E|D|BTP"/>
+    </xs:restriction>
+</xs:simpleType>
 </xs:schema>

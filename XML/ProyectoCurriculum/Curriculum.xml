@@ -23,7 +23,6 @@
         <pais>España</pais>
         <email>uncorreo@gmail.com</email>
         <lfn>123456789</lfn>
-        <tlfFijo></tlfFijo>
     </contactos>
 
     <contactoAdicional>
@@ -91,8 +90,8 @@
 
     <DatosAdicionales>
         <aficiones>Escribir</aficiones>
-        <disponibilidadViajar>Si</disponibilidadViajar>
+        <disponibilidadViajar>si</disponibilidadViajar>
         <vehiculoPropio>Moto</vehiculoPropio>
-        <licencia>AM</licencia>
+        <licencia>C1</licencia>
     </DatosAdicionales>
 </Curriculum>
